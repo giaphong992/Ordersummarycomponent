@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+:root{
+    --family-font:"Red Hat Display",sans-serif;
+    --pale-blue:hsl(225,100%,94%);
+    --bright-blue:hsl(245, 75%, 52%);
+    --very-pale-blue:hsl(225, 100%, 98%);
+    --desatureted-blue:hsl(224, 23%, 55%);
+    --dark-blue:hsl(223,47%,23%);
+}
+/* */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.attribution { 
+    font-size: 16px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(227, 34%, 21%); 
+}
+body{
+    background-image: url("/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    font-family: var(--family-font);
+    background-color: var(--pale-blue);
+}
+p{
+    font-size:16px;
+}
+.container{
+    width:40%;
+    height: 100%;
+    margin:1% auto;
+    background-color: #fff;
+    border-radius: 5%;
+}
+.img-box img{
+    width:100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.header{
+    text-align:center;
+
+}
+.header h1{
+    font-size:1.5rem;
+    font-weight: 700;
+    margin-top:1rem;
+}
+.header p{
+    font-size: 16px;
+    font-weight: 500;
+    margin:0 1rem;
+    padding:1rem;
+}
+
+.plan-charge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    margin:1rem 2rem;
+    padding:1rem;
+    border-radius: 5%;
+}
+
+.plan-infor{
+    margin:0 1rem 0 0;
+    font-style: italic;
+}
+
+.payment{
+    display:flex;
+    flex-direction: column;
+    padding:1rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+button.proceed{
+    background-color: var(--bright-blue);
+    padding:1rem;
+    border-radius: 10px;
+    color:#fff;
+    width:100%;
+    max-width: 85%;
+    border:1px solid;
+    font-weight: bold;
+    font-size: 16px;
+}
+a.cancel{
+    text-decoration: none;
+    color:#000;
+    margin: 1rem;
+    font-weight: 700;
+    opacity:0.5;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+a.plan-infor:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+a.plan-infor:visited{
+    color:var(--dark-blue);
+}
+a.cancel:hover{
+    opacity:1;
+}
+
+@media only screen and (max-width: 475px) {
+   body{
+       background-image: url(/images/pattern-background-mobile.svg);
+       background-position: 100%;
+   } 
+   .container{
+       width:100%;
+       max-width: 60%;
+       margin:1% auto;
+   }
+   .plan-charge{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .plan-infor{
+       margin-top:1rem;
+   }
+}
+@media screen and (min-width:768px){
+    body{
+        background-image: url(../images/pattern-background-desktop.svg);
+        background-position: 100%;
+    }    
+    .container{
+        width: 50%;
+        margin: 1% auto;
+    }
+}
