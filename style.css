@@ -70,7 +70,7 @@ p{
 }
 
 .plan-infor{
-    margin:0 1rem 0 0;
+    margin-left:1rem;
     font-style: italic;
 }
 
@@ -84,6 +84,9 @@ p{
 p.annual{
     font-weight: bold;
     font-size:86%;
+}
+p>span{
+    font-weight: 400;
 }
 button.proceed{
     background-color: var(--bright-blue);
