@@ -7,7 +7,7 @@
     --desatureted-blue:hsl(224, 23%, 55%);
     --dark-blue:hsl(223,47%,23%);
 }
-/* */
+
 
 *{
     margin:0;
@@ -21,7 +21,7 @@
     color: hsl(227, 34%, 21%); 
 }
 body{
-    background-image: url("/images/pattern-background-desktop.svg");
+    background-image: url("./images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
@@ -81,7 +81,10 @@ p{
     justify-content: center;
     align-items: center;
 }
-
+p.annual{
+    font-weight: bold;
+    font-size:86%;
+}
 button.proceed{
     background-color: var(--bright-blue);
     padding:1rem;
@@ -142,7 +145,13 @@ a.cancel:hover{
         background-position: 100%;
     }    
     .container{
-        width: 40%;
-        margin: 1% auto;
+        width: 100%;
+        max-width:25%;
+        max-height:50%;
+        margin: 2% auto;
     }
+
+    .plan-infor{
+       margin-right:1rem;
+   }
 }
